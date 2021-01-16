@@ -37,13 +37,13 @@ h1{
     margin-right: 10px;
     /*padding: 10px;*/
 }
-.box #main{
+.box #main1 #main2 #main3{
     clear: right;
     padding: 10px;
 }
 
 /*Media queries*/
 
-@media(max-width: 700px){
+@media(max-width: 700px)
 
 }
