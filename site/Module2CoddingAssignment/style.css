@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 h1{
@@ -9,6 +10,7 @@ h1{
 }
 #container{
     margin: 10px;
+    box-sizing: border-box;
 }
 #chicken{
     background-color: #00ffbb;
@@ -28,37 +30,61 @@ h1{
     text-align: center;
     float: right;
 }
-.box{
+.box1{
     background-color: lightgrey;
     width: 30%;
     float: left;
     border: 2px solid black;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
+   /* padding: 10px;*/
 }
-.box #main1{
-    clear: right;
-    padding: 10px;
+.box2{
+    background-color: lightgrey;
+    width: 30%;
+    float: left;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-right: 5px;
+  /*  padding: 10px;*/
 }
-.box #main2{
-    clear: right;
-    padding: 10px;
+.box3{
+    background-color: lightgrey;
+    width: 30%;
+    float: left;
+    border: 2px solid black;
+    margin-top: 10px;
 }
-.box #main3{
-    clear: right;
-    padding: 10px;
+.box1 #main1, .box2 #main2, .box3 #main3{
+    padding: 5px;
 }
+
 
 /*Media queries for Large Screens*/
 
-@media(min-width: 992px){
-    .box{
+@media(max-width: 992px){
+    .box1, .box2, .box3{
+        float: left;
         width: 30%;
     }
 }
 
 /*Media queries for Medium Screens*/
 
-@media(min-width: 768px) and (max-width: 991){
-    .box
+@media(min-width: 768px) and (max-width: 991px){
+    .box1, .box2{
+        width: 47%;
+        box-sizing: border-box;
+    }
+    .box3{
+        width: 100%;
+    }
+}
+
+/*Media queries for Medium Screens*/
+
+@media(max-width: 767px){
+    .box1, .box2, .box3{
+        width: 100%;
+    }
 }
