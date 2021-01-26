@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #f4f4f4;
+  font: 16px/1.5 Arial, Sans-serif, Helvetica;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+header{
+  background-color: #cccccc;
+}
+#page-title{
+  text-align: center;
+  font-size: 24px;
+}
+#boxes{
+  margin-top: 30px;
+}
+.box{
+  background-color: #cccccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.box h3{
+  text-align: center;
+}
